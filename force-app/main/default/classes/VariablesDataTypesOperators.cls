@@ -249,9 +249,8 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Double complexOrderOfOperations(Integer a, Integer b, Integer c, Integer d, Integer e) {
         // Add parentheses around the multiplication and subtraction operations so that they are performed before division and addition
-        Double result = a * b - c / (Double) d + e;
-
-        return null; // Replace null with the variable you used to store the result
+        Double result = (a * b - c) / (Double)d + e;
+        return result; 
     }
 
     /**
@@ -265,8 +264,8 @@ public with sharing class VariablesDataTypesOperators {
         final Double SUBTRACT_FACTOR = 32.0;
         final Double MULTIPLY_FACTOR = 5.0;
         final Double DIVIDE_FACTOR = 9.0;
-    
-        return null; // Replace null with the variable you used to store the result
+        Double celcius = (fahrenheit - SUBTRACT_FACTOR) * MULTIPLY_FACTOR/DIVIDE_FACTOR;
+        return celcius;
     }
 
     
