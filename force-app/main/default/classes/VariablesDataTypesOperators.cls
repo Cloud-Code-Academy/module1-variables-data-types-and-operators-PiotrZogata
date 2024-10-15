@@ -32,8 +32,9 @@ public with sharing class VariablesDataTypesOperators {
      * @return The sum of the two numbers, or null if either number is null.
      */
     public static Integer addition(Integer a, Integer b) {  
-        if(a == null || b == null)
+        if(a == null || b == null){
             return null;
+        }
             Integer c = a + b;
         return c; // Replace null with the variable you used to store the result   
     }
@@ -74,9 +75,10 @@ public with sharing class VariablesDataTypesOperators {
      * @return The quotient of the division, or 0 if the denominator is zero.
      */
     public static Decimal division(Integer a, Integer b) {
-        if(b == 0)
-        return 0;
-        Integer c = a / b;
+        if(b == 0){
+            return 0;
+        }
+            Integer c = a / b;
         return c; // Replace null with the variable you used to store the result
     }
 
@@ -91,8 +93,9 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the number is even, False otherwise.
      */
     public static Boolean isEven(Integer num) {
-            if(math.mod(num, 2) == 0)
-            return true;
+            if(math.mod(num, 2) == 0){
+                return true;
+            }
         return false; // Replace null with the variable you used to store the result
     }
 
@@ -104,8 +107,9 @@ public with sharing class VariablesDataTypesOperators {
      * @return true if the number is positive, false otherwise.
      */
     public static Boolean isPositive(Integer num) {
-            if(num > 0)
-            return true;
+            if(num > 0){
+                return true;
+            }
         return false; // Replace null with the variable you used to store the result
     }
 
@@ -118,7 +122,7 @@ public with sharing class VariablesDataTypesOperators {
      * @return The concatenated string.
      */
     public static String concatenateStrings(String str1, String str2) {
-        return null; // Replace null with the variable you used to store the result
+        return str1+str2; // Replace null with the variable you used to store the result
     }
 
 	/**
@@ -133,7 +137,8 @@ public with sharing class VariablesDataTypesOperators {
 	 * @return The complete sentence as a single String.
 	 */
 	public static String createSentence(String noun, String verb, String endingPunctuation) {
-		return null; // Replace null with the variable you used to store the result
+		String sentence = 'The '+noun +' is '+verb+endingPunctuation;
+        return sentence; // Replace null with the variable you used to store the result
 	}
 
     /**
