@@ -91,7 +91,9 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the number is even, False otherwise.
      */
     public static Boolean isEven(Integer num) {
-        return null; // Replace null with the variable you used to store the result
+            if(math.mod(num, 2) == 0)
+            return true;
+        return false; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -102,7 +104,9 @@ public with sharing class VariablesDataTypesOperators {
      * @return true if the number is positive, false otherwise.
      */
     public static Boolean isPositive(Integer num) {
-        return null; // Replace null with the variable you used to store the result
+            if(num > 0)
+            return true;
+        return false; // Replace null with the variable you used to store the result
     }
 
     /**
