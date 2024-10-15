@@ -314,7 +314,10 @@ public with sharing class VariablesDataTypesOperators {
      * @return A Decimal representing the monthly paycheck.
      */
     public static Decimal calculateMonthlyPaycheck(Decimal hourlyRate, Double numberOfHours) {
-        return null; // Replace null with the variable you used to store the result
+        // Calculate the monthly paycheck by using the weekly paycheck and multiplying by 4
+            Decimal weeklyPaycheck = calculateWeeklyPaycheck(hourlyRate, numberOfHours);
+            Decimal monthlyPaycheck = weeklyPaycheck * 4;
+        return monthlyPaycheck;
     }
 
     /**
@@ -328,6 +331,7 @@ public with sharing class VariablesDataTypesOperators {
      * @return The total cost after applying the sales tax.
      */
     public static Decimal calculateTotalCost(Decimal pricePerUnit, Integer numberOfUnits, Decimal salesTaxRate) {
-        return null; // Replace null with the variable you used to store the result
+            Decimal totalCosts = (pricePerUnit * numberOfUnits) * (1 + salesTaxRate);         
+        return totalCosts;
     }
 }
